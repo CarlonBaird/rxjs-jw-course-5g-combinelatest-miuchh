@@ -19,6 +19,6 @@ combineLatest([temperatureInputEvent$, conversionInputEvent$]).subscribe(
     } else if (conversion === 'c-to-f') {
       result = (9 / 5) * temperature + 32;
     }
-    console.log(result);
+    resultText.innerText = String(result);
   }
 );
